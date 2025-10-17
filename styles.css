@@ -42,10 +42,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 p {
     font-size: 18px;
     line-height: 1.5;
@@ -185,6 +181,7 @@ nav {
 }
 
 
+
 /*
 
 Header & Landing Page
@@ -228,6 +225,10 @@ header .row {
     bottom: 0;
     z-index: 1;
     transition: border-color 300ms;
+}
+
+input::focus {
+    border-color: purple;
 }
 
 .header__email--btn {
