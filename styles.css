@@ -362,6 +362,7 @@ Quality Section
     position: relative;
 }
 
+
 .quality__description {
     max-width: 576px;
     margin-right: 64px;
@@ -393,7 +394,7 @@ Quality Section
     width: 80px;
     height: 80px;
     position: absolute;
-    right: 0px;
+    right: -50px;
     bottom: 0px;
     fill: rgb(100, 21, 255);
     --tw-text-opacity: 1;
@@ -1053,8 +1054,8 @@ footer {
 .footer__divider {
     width: 100%;
     height: 2px;
-    margin: 64px 0px;
-    background-color: rgba(116, 44, 255);
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
 }
 
 .footer__bottom {
@@ -1087,55 +1088,95 @@ footer {
     font-weight: 500;
 }
 
+.footer__socials {
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
+}
+
+.footer__social--link {
+    margin-left: 16px;
+    padding: 8px;
+    background: #f7fafc;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
 /*
 
 MEDIA / RESPONSIVENESS
 
 */
 
-@media(max-width: 1280px) {
+/* RESPONSIVENESS */
+
+/* Large screens (<=1280px) */
+@media (max-width: 1280px) {
     header .row {
         align-items: flex-end;
     }
 }
 
+/* Medium screens (<=1024px) */
 @media (max-width: 1024px) {
     .btn__menu {
         display: block;
     }
+
     header .row {
         flex-direction: column;
         align-items: center;
     }
+
     footer {
         padding: 80px 32px;
     }
 }
 
-@media(max-width: 768px) {
+/* Small screens (<=768px) */
+@media (max-width: 768px) {
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
     }
+
     #steps .row,
     #testimonials .row {
         flex-direction: column;
         align-items: center;
     }
+
     #pricing .row {
         margin-top: 40px;
     }
 }
 
-@media(max-width: 640px) {
+/* Extra small screens (<=640px) */
+@media (max-width: 640px) {
     .container {
         padding: 80px 0;
     }
+
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
     }
+
     main {
         margin-bottom: 80px;
+    }
+
+    /* Optional: make nav links stack vertically for mobile */
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__link {
+        margin: 8px 0;
     }
 }
