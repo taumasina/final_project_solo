@@ -359,6 +359,7 @@ Quality Section
 .quality__desription,
 .quality__img--wrapper {
     width: 50%;
+    position: relative;
 }
 
 .quality__description {
@@ -734,6 +735,32 @@ PRICING SECTION
     color: #a0aec0;
 }
 
+/* Plan Buttons Hover + Active Effects */
+
+.plan__button {
+    transition: all 300ms ease; /* smooth transition for everything */
+}
+
+.plan:nth-child(1) .plan__button:hover {
+    background-color: rgb(45, 150, 140); /* hover color */
+    transform: translateY(-2px);        /* lift effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+}
+
+.plan:nth-child(2) .plan__button:hover {
+    background-color: #e0e7ff;          /* hover color */
+    color: #4f00ff;                     /* text color change */
+    transform: translateY(-2px);        /* lift effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plan:nth-child(3) .plan__button:hover {
+    background-color: rgb(245, 80, 80); /* hover color */
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 /*
 
 TESTIMONIALS SECTION
@@ -788,7 +815,7 @@ TESTIMONIALS SECTION
     color: #4a5568;
     line-height: 1.625;
     margin-top: 1rem;
-    font-size: 1.25rrm;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
@@ -974,7 +1001,7 @@ FOOTER SECTION
 */
 
 footer {
-    padding: 96x 32px;
+    padding: 96px 32px;
     background-color: rgb(100, 21, 255);
     position: relative;
     margin-bottom: -32px;
