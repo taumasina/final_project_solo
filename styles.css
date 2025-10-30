@@ -945,6 +945,28 @@ START SECTION
     background-color: rgb(247 250 252);
 }
 
+.start__blob--1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20rem;
+    width: 20rem;
+    transform: translate(-5rem, 8rem);
+    color: rgb(80 17 204);
+    opacity: 0.5;
+}
+
+.start__blob--2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 20rem;
+    width: 20rem;
+    transform: translate(5rem, -16rem);
+    color: rgb(80 17 204);
+    opacity: 0.5;
+}
+
 /*
 
 FOOTER SECTION
