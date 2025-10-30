@@ -162,7 +162,7 @@ nav {
 .nav__link::after {
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: -6px;
     height: 2px;
     width: 0;
@@ -174,6 +174,7 @@ nav {
 .nav__link:hover::after {
     width: 100%;
     opacity: 1;
+    left: 0;
 }
 
 .login {
@@ -234,10 +235,11 @@ header .row {
     bottom: 0;
     z-index: 1;
     transition: border-color 300ms;
+    outline: none;
 }
 
 input:focus {
-    border-color: purple;
+    border-color: #6415ff;
 }
 
 .header__email--btn {
@@ -518,6 +520,7 @@ VALUES SECTION
     background-color: #9ae6b4;;
 }
 
+
 .value__img--wrapper {
     background-color: #feb2b2;
 }
@@ -749,7 +752,7 @@ TESTIMONIALS SECTION
     margin-top: 4px;
 }
 
-.fa-solid, .fas {
+.fa-star, .fas {
     font-weight: 900;
     color: rgb(246 173 85);
 }
@@ -922,9 +925,11 @@ FOOTER SECTION
 */
 
 footer {
+    padding: 96x 32px;
     background-color: rgb(100, 21, 255);
     position: relative;
-    padding: 96x 32px;
+    margin-bottom: -32px;
+    overflow: hidden
 }
 
 .footer__columns {
@@ -1000,11 +1005,61 @@ footer {
     letter-spacing: 0.05em;
 }
 
+.footer__copyright {
+    color: rgb(203, 213, 225);
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /*
 
 MEDIA / RESPONSIVENESS
 
 */
 
+@media(max-width: 1280px) {
+    header .row {
+        align-items: flex-end;
+    }
+}
 
+@media (max-width: 1024px) {
+    .btn__menu {
+        display: block;
+    }
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        padding: 80px 32px;
+    }
+}
 
+@media(max-width: 768px) {
+    #quality .row,
+    #values .row {
+        flex-direction: column-reverse;
+    }
+    #steps .row,
+    #testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing .row {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+    .nav__logo {
+        margin: 8px 0;
+        padding-bottom: 4px;
+    }
+    main {
+        margin-bottom: 80px;
+    }
+}
