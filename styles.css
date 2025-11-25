@@ -19,7 +19,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -189,6 +189,10 @@ nav {
     color: white;
     background-color: #6415ff;
     text-decoration: none;
+}
+
+.nav__link--primary:hover {
+    background-color: rgb(80, 17, 204);
 }
 
 
@@ -871,6 +875,12 @@ TESTIMONIALS SECTION
     border-radius: 50%;
     margin: 0 12px;
     transition: all 300ms ease;
+    border: none;
+}
+
+.fas-arrow {
+    font-size: 16px;
+    color: rgb(100 21 255);
 }
 
 .testimonial__button:hover {
@@ -1002,15 +1012,15 @@ FOOTER SECTION
 */
 
 footer {
-    padding: 96px 32px;
+    padding: 48px 32px;
     background-color: rgb(100, 21, 255);
     position: relative;
     margin-bottom: -32px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .footer__columns {
-    margin-top: 48px;
+    margin-top: -48px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1026,12 +1036,12 @@ footer {
 
 .footer__column--title {
     font-weight: 700;
-    color: rgb(247, 250, 252);
+    color: #f7fafc;
     line-height: 1.5;
 }
 
 .footer__column--link {
-    color: rgb(247, 250, 252);
+    color: #f7fafc;
     margin-top: 12px;
     font-size: 14px;
     font-weight: 500;
@@ -1047,18 +1057,25 @@ footer {
     bottom: -6px;
     height: 2px;
     width: 100%;
+    background: #f7fafc;
+    transition: 300ms ease;
     opacity: 0;
-    transition: 300ms;
+}
+
+.footer__column--link:hover::after {
+    opacity: 1;
 }
 
 .footer__divider {
     width: 100%;
-    height: 2px;
-    margin: 64px 0;
+    height: 1px;
+    margin: 32px 0px;
     background: rgb(116, 44, 255);
 }
 
 .footer__bottom {
+    padding-top: 32px;
+    padding-bottom: -32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1119,6 +1136,10 @@ MEDIA / RESPONSIVENESS
     header .row {
         align-items: flex-end;
     }
+
+    .header__img {
+        max-width: 512px;
+    }
 }
 
 /* Medium screens (<=1024px) */
@@ -1126,10 +1147,18 @@ MEDIA / RESPONSIVENESS
     .btn__menu {
         display: block;
     }
+    
+    h1 {
+        font-size: 30px;
+    }
 
     header .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    .header__description--para {
+        margin: 20px 0;
     }
 
     footer {
