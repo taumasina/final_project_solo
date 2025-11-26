@@ -202,12 +202,13 @@ nav {
     border: none;
 }
 
+
 .menu__backdrop {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 378px;
+    min-height: 378px;
     margin: 24px 16px;
     padding: 32px;
     background-color: #fff;
@@ -235,7 +236,7 @@ nav {
 }
 
 .menu__list {
-    padding: 32px 0px;
+    padding: 16px 0px;
 }
 
 .menu__link {
@@ -873,7 +874,7 @@ TESTIMONIALS SECTION
     margin-top: 4px;
 }
 
-.fa-star, .fas {
+.fa-star {
     font-weight: 900;
     color: rgb(246 173 85);
 }
