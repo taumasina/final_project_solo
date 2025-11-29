@@ -1230,11 +1230,25 @@ MEDIA / RESPONSIVENESS
     }
     .header__customers {
         padding-right: 0px;
+        padding-bottom: 64px;
     }
     .header__description--para {
         font-size: 16px;
     }
     .header__customers--title {
         margin-top: 64px;
+    }
+
+    h2, h4, p, .section__tag {
+        text-align: center;    
+    }
+
+    .section__para {
+        font-size: 14px;    
+    }
+
+    .features {
+        max-width: 768px;
+        justify-content: center;
     }
 }
