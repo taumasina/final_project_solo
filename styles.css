@@ -201,7 +201,7 @@ nav {
 
 .btn__menu {
     background-color: transparent;
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
     border: none;
     display: none;
@@ -1210,17 +1210,6 @@ MEDIA / RESPONSIVENESS
 /*SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
 
 @media (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav__row {
-        flex-direction: row;
-    }
-    .nav__links {
-        display: none;
-    }
     header .row {
         flex-direction: column;
         align-items: center;
@@ -1253,17 +1242,42 @@ MEDIA / RESPONSIVENESS
         max-width: 768px;
         justify-content: center;
     }
-    .menu {
-        display: block;
+    .header__email {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
     }
-    .btn__menu {
-        display: block;
+    .header__email--input{
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
     }
 }
 
 
 
+
 @media (max-width: 1024px) {
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .header__description{
+        width: 80%;
+        text-align: center;
+    }
     .feature {
         width: calc(50%);
         text-align: left;;
@@ -1275,4 +1289,16 @@ MEDIA / RESPONSIVENESS
         margin-right: 0px;
         padding-right: 48px;
         }
+    .nav__row {
+        flex-direction: row;
+    }
+    .nav__links {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .btn__menu {
+        display: block;
+    }
 }
