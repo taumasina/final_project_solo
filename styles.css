@@ -1274,9 +1274,19 @@ MEDIA / RESPONSIVENESS
         text-align: center;
         font-size: 30px;
     }
-    .header__description{
+    .header__description {
         width: 80%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__customers {
+        width: 80%;
+        padding-right: 0px;
+        padding-top: 8px;
+        padding-bottom: 64px;
     }
     .feature {
         width: calc(50%);
