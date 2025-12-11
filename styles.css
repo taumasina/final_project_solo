@@ -1444,16 +1444,72 @@ MEDIA / RESPONSIVENESS
         flex-direction: column;
         align-items: center;
     }
+
+        .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .footer__copyright, .footer__socials {
+        margin-top: 32px;
+    }
 }
 
+
+
 @media (max-width: 640px) {
-        .testimonial__bottom {
+        
+    .testimonial__bottom {
         flex-direction: column;
         align-items: center;
         padding-top: 4px;
     }
 
+    .testimonial__profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__details {
+        margin-left: 0px;
+        margin-top: 12px;
+        text-align: center;
+    }
+
     .testimonial__buttons {
         margin-top: 16px;
+    }
+
+    .start__title {
+        font-size: 24px;
+    }
+
+    .start__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start__button.btn {
+        margin: 0px;
+        margin-bottom: 16px;;
+    }
+
+    .footer__columns {
+        justify-content: center;
+    }
+
+    .footer__column {
+        width: auto;
+        padding: 0 16px;
+        text-align: center;
+        align-items: center;
     }
 }
