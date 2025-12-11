@@ -35,6 +35,7 @@ body {
 
 img {
     width: 100%;
+    pointer-events: none;
 }
 
 ul {
@@ -438,12 +439,13 @@ Quality Section
 }
 
 .quality__img--wrapper {
-    margin: 0 56px;
+    margin: 0px;
 }
 
 .quality__description {
-    max-width: 576px;
-    margin-right: 64px;
+    max-width: 50%;
+    margin-right: 24px;
+    width: 100%;
 }
 
 #quality .section__title {
@@ -1323,9 +1325,6 @@ MEDIA / RESPONSIVENESS
     h2, h4, p, .section__tag {
         text-align: center;    
     }
-    .section__para {
-        font-size: 14px;    
-    }
     .feature {
         width: auto;
         max-width: 384px;
@@ -1349,7 +1348,63 @@ MEDIA / RESPONSIVENESS
         margin-bottom: 0px;
         line-height: 1.5;
     }
-     #quality .row, #values .row, {
+     #quality .row, #values .row {
         flex-direction: column-reverse;
     }
+        #steps .row, #testimonials .row {
+        flex-direction: column;
+    }
+
+    .quality__img--wrapper {
+        width: 80%;
+        position: relative;
+        margin-bottom: 96px;
+    }
+
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+    }
+    
+    .section__para {
+        font-size: 14px;    
+    }
+
+    .steps__img--wrapper,
+    .steps__description {
+        width: 80%;
+    }
+
+    .steps__img--wrapper {
+        margin-bottom: 72px;
+    }
+
+    .steps__description {
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step__number {
+        margin-bottom: 16px;
+    }
+    
 }
